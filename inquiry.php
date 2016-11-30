@@ -18,5 +18,9 @@ $impression = $_POST['impression'];
 		<p>以下の内容でよろしいですか?</p>
 		名前: <?php echo $name; ?><br>
 		感想: <?php echo $impression; ?>
+
+		<form action="thankyou.php" method="post">
+			<input type="submit" value="この内容で送信">	
+		</form>
 	</body>
 </html>
