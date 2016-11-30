@@ -20,6 +20,8 @@ $impression = $_POST['impression'];
 		感想: <?php echo $impression; ?>
 
 		<form action="thankyou.php" method="post">
+			<input type="hidden" name="name" value="<?php echo $name; ?>">
+			<input type="hidden" name="impression" value="<?php echo $impression; ?>">
 			<input type="submit" value="この内容で送信">	
 		</form>
 	</body>
