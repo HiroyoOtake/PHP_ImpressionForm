@@ -24,5 +24,6 @@ $impression = $_POST['impression'];
 			<input type="hidden" name="impression" value="<?php echo $impression; ?>">
 			<input type="submit" value="この内容で送信">	
 		</form>
+		<a href="index.php">戻る</a>
 	</body>
 </html>
