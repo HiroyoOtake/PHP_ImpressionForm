@@ -16,12 +16,12 @@ $impression = $_POST['impression'];
 	<body>
 		<h1>内容確認</h1>
 		<p>以下の内容でよろしいですか?</p>
-		名前: <?php echo $name; ?><br>
-		感想: <?php echo $impression; ?>
+		名前: <?php echo htmlspecialchars($name, ENT_QUOTES, "UTF-8"); ?><br>
+		感想: <?php echo htmlspecialchars($impression, ENT_QUOTES, "UTF-8"); ?>
 
 		<form action="thankyou.php" method="post">
-			<input type="hidden" name="name" value="<?php echo $name; ?>">
-			<input type="hidden" name="impression" value="<?php echo $impression; ?>">
+			<input type="hidden" name="name" value="<?php echo htmlspecialchars($name, ENT_QUOTES, "UTF-8"); ?>">
+			<input type="hidden" name="impression" value="<?php echo htmlspecialchars($impression, ENT_QUOTES, "UTF-8"); ?>">
 			<input type="submit" value="この内容で送信">	
 		</form>
 		<a href="index.php">戻る</a>

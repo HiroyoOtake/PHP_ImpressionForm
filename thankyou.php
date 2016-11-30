@@ -15,8 +15,8 @@ $impression = $_POST['impression'];
 	<body>
 		<h1>投稿ありがとうございました。</h1>
 		<p>以下の内容で投稿されました。</p>
-		名前: <?php echo $name; ?><br>
-		感想: <?php echo $impression; ?><br>
+		名前: <?php echo htmlspecialchars($name, ENT_QUOTES, "UTF-8"); ?><br>
+		感想: <?php echo htmlspecialchars($impression, ENT_QUOTES, "UTF-8"); ?><br>
 	</body>
 	<a href="index.php">戻る</a>
 </html>
